@@ -31,6 +31,9 @@ p {
     font-size: .875rem;
     font-weight: 700;
 }
+.i{
+    font-size: 48px;
+}
 
 /* nav section style */
 .nav-container {
@@ -83,6 +86,7 @@ p {
     width: 100%;
 }
 .companies-logos{
+    border: 2px solid red ;
     margin: 100px auto;
     justify-content: space-evenly;    
     /* border: 2px solid red ; */
@@ -90,7 +94,6 @@ p {
 /* collection section style */
 
 .collection-section{
-
     width: 1130px;
     margin: 150px auto;
     /* border: 2px solid red ; */
@@ -193,6 +196,13 @@ p {
      {
         flex-direction: column;
     }
+    .nav-title{
+        justify-content: space-around;
+    }
+    .nav-title i{
+        font-size: 32px;
+        margin-top: 15px;
+    }
     .card-box-section{
         grid-template-columns: repeat(1, 1fr);
     }
@@ -206,11 +216,16 @@ p {
         display: none;
     }
     .companies-logos{
-        padding: 50px;
         display: grid;
-        grid-row: 20px;
+        gap: 30px;
         grid-template-columns: repeat(4, 1fr);
-        justify-content: center;
+        /* display: flex; */
+        /* justify-content: center; */
+
+    }
+    .companies-logos img{
+        width: 100%;
+        
     }
     .card-box{
         margin-left: 20px;
